@@ -6,7 +6,7 @@ import CourseCard from "./courseCard";
 const inter = Inter({ subsets: ["latin"] });
 export const courseCovered = [
   {
-    img: "/courseImg.svg",
+    img: "/course.png",
     courseLink:
       "https://datavidhya.com/all-course:Workflow%20Orchestration%20with%20Apache%20Airflow%20for%20Data%20Engineering",
     name: "Workflow Orchestration with Apache Airflow for Data Engineering",
@@ -20,7 +20,7 @@ export const courseCovered = [
     instructor: "Darshil Parmar",
   },
   {
-    img: "/courseImg.svg",
+    img: "/course.png",
     courseLink:
       "https://datavidhya.com/all-course:Apache%20Spark%20with%20Databricks%20for%20Data%20Engineers",
     name: "Apache Spark with Databricks for Data Engineers",
@@ -34,7 +34,7 @@ export const courseCovered = [
     instructor: "Darshil Parmar",
   },
   {
-    img: "/courseImg.svg",
+    img: "/course.png",
     courseLink:
       "https://datavidhya.com/all-course:Data%20Warehouse%20for%20Data%20Engineering%20with%20Snowflake",
     name: "Data Warehouse for Data Engineering with Snowflake",
@@ -48,7 +48,7 @@ export const courseCovered = [
     instructor: "Darshil Parmar",
   },
   {
-    img: "/courseImg.svg  ",
+    img: "/course.png  ",
     courseLink:
       "https://datavidhya.com/all-course:Python%20for%20Data%20Engineering",
     name: "Python for Data Engineering",
@@ -62,7 +62,7 @@ export const courseCovered = [
     instructor: "Darshil Parmar",
   },
   {
-    img: "/courseImg.svg",
+    img: "/course.png",
     courseLink:
       "https://datavidhya.com/all-course:SQL%20for%20Data%20Engineering",
     name: "SQL for Data Engineering",
