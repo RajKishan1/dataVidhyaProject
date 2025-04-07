@@ -2,7 +2,7 @@ import React from "react";
 import TabButtons from "../TabButtons";
 interface prop {
   btnNum: number;
-  setBtnNum: (num:number) => any;
+  setBtnNum: (num: number) => any;
 }
 const BtnBar = ({ btnNum, setBtnNum }: prop) => {
   return (
@@ -13,6 +13,7 @@ const BtnBar = ({ btnNum, setBtnNum }: prop) => {
         text={"Choose Your Path"}
         Index={1}
         clName="w-[25%]"
+        clip={"polygon(90% 0, 100% 50%, 90% 100%, 0 100%, 0 0)"}
       />
       <TabButtons
         text={"Solve Questions"}
@@ -36,6 +37,7 @@ const BtnBar = ({ btnNum, setBtnNum }: prop) => {
         text={"Gamified Learning"}
         Index={4}
         clName="-ml-[4%] w-[28%]"
+        clip={"polygon(0 0, 100% 0, 100% 100%, 0 100%, 10% 50%)"}
       />
     </div>
   );

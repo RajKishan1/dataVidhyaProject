@@ -7,19 +7,18 @@ interface prop {
   text: string;
   heading: string;
 }
-function Display({ text, heading }: prop) {
+function Display({}: prop) {
   const [btnNum, setBtnNum] = useState<number>(1);
   const [imgPath, setImgPath] = useState("/images/first.png");
 
-
   useEffect(() => {
-    btnNum === 2
+    btnNum === 1
+      ? setImgPath("/images/first.png")
+      : btnNum === 2
       ? setImgPath("/images/second.png")
       : btnNum === 3
       ? setImgPath("/images/third.png")
-      : btnNum === 4
-      ? setImgPath("/images/fourth.png")
-      : setImgPath("/images/first.png");
+      : setImgPath("/images/fourth.png");
   }, [btnNum]);
 
   return (

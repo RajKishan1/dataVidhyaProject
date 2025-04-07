@@ -1,10 +1,17 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import RadioBtn from "./landingPage/RadioBtn";
 interface prop {
   btnNum: number;
   setBtnNum: (num: number) => any;
 }
 const HeadingText = ({ btnNum, setBtnNum }: prop) => {
+  const [radioNum, setRadioNum] = useState(1);
+  const [indexNum, setIndexNum] = useState(1);
+  useEffect(() => {
+    setTimeout((indexNum: number) => {
+      indexNum + 1;
+    }, 1000);
+  }, []);
   return (
     <div>
       <h1 className="text-xl text-left leading-6 font-semibold tracking-[-1.5%] mb-2.5   text-black">
@@ -14,7 +21,7 @@ const HeadingText = ({ btnNum, setBtnNum }: prop) => {
           "Solve Questions"
         ) : btnNum === 3 ? (
           <span className="flex gap-2 ">
-            <p className="text-purple-500">1/4.</p>
+            <p className="text-purple-500">{radioNum}/4.</p>
             <p> AI Review✨</p>
           </span>
         ) : (
@@ -40,10 +47,26 @@ const HeadingText = ({ btnNum, setBtnNum }: prop) => {
             "Engage in real-world coding challenges and get instant feedback to
             enhance your skills"
             <div className="mt-2 flex items-center gap-1">
-              <RadioBtn />
-              <RadioBtn />
-              <RadioBtn />
-              <RadioBtn />
+              <RadioBtn
+                radioNum={radioNum}
+                setRadioNum={setRadioNum}
+                indexNum={1}
+              />
+              <RadioBtn
+                radioNum={radioNum}
+                setRadioNum={setRadioNum}
+                indexNum={2}
+              />
+              <RadioBtn
+                radioNum={radioNum}
+                setRadioNum={setRadioNum}
+                indexNum={3}
+              />
+              <RadioBtn
+                radioNum={radioNum}
+                setRadioNum={setRadioNum}
+                indexNum={4}
+              />
             </div>
           </span>
         ) : (
