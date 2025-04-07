@@ -13,12 +13,7 @@ const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <motion.nav
-      className="sticky top-0 z-50 mx-auto my-4 h-[56px] max-w-[687px] rounded-[16px] border border-[#DBDBDB] bg-[#F0F0F07A]/50 px-4 shadow-sm backdrop-blur-sm md:px-8"
-      initial={{ y: -100 }}
-      animate={{ y: 0 }}
-      transition={{ duration: 0.5 }}
-    >
+    <nav className="sticky top-0 z-50 mx-auto my-4 h-[56px] max-w-[687px] rounded-[16px] border border-[#DBDBDB] bg-[#F0F0F07A]/50 px-4 shadow-sm backdrop-blur-sm md:px-8">
       <div className="flex justify-around">
         <Link href="/" className="flex items-center gap-2">
           <img
@@ -103,12 +98,7 @@ const Navbar = () => {
       </div>
 
       {isMenuOpen && (
-        <motion.div
-          className={`mt-4 space-y-3 py-2 md:hidden ${inter.className}`}
-          initial={{ opacity: 0, height: 0 }}
-          animate={{ opacity: 1, height: "auto" }}
-          transition={{ duration: 0.3 }}
-        >
+        <div className={`mt-4 space-y-3 py-2 md:hidden ${inter.className}`}>
           <Link
             href="/"
             className="block rounded-lg px-4 py-2 font-medium text-gray-800 hover:bg-gray-100"
@@ -133,9 +123,9 @@ const Navbar = () => {
           >
             Resources
           </Link>
-        </motion.div>
+        </div>
       )}
-    </motion.nav>
+    </nav>
   );
 };
 

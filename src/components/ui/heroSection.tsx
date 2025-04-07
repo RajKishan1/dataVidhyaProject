@@ -35,27 +35,27 @@ export default function Home() {
   };
 
   const cardContainer = {
-    hidden: { opacity: 0 },
-    show: {
-      opacity: 1,
-      transition: {
-        staggerChildren: 0.15,
-        delayChildren: 0.5,
-      },
-    },
+    // hidden: { opacity: 0 },
+    // show: {
+    //   opacity: 1,
+    //   transition: {
+    //     staggerChildren: 0.15,
+    //     delayChildren: 0.5,
+    //   },
+    // },
   };
 
-  const cardItem = {
-    hidden: { y: 30, opacity: 0 },
-    show: {
-      y: 0,
-      opacity: 1,
-      transition: {
-        duration: 0.6,
-        ease: "easeOut",
-      },
-    },
-  };
+  // const cardItem = {
+  //   hidden: { y: 30, opacity: 0 },
+  //   show: {
+  //     y: 0,
+  //     opacity: 1,
+  //     transition: {
+  //       duration: 0.6,
+  //       ease: "easeOut",
+  //     },
+  //   },
+  // };
 
   return (
     <main className="relative h-[110vh] max-2xl:h-[125vh] w-full overflow-hidden">
@@ -88,27 +88,16 @@ export default function Home() {
         <Navbar />
 
         {isMounted && (
-          <motion.div
-            initial="hidden"
-            animate="show"
-            variants={container}
-            className="mx-auto mt-4 max-w-full px-4 sm:mt-6 sm:px-6 md:mt-8 md:px-8 lg:w-[80rem] lg:px-5"
-          >
-            <motion.h1
-              variants={item}
-              className="max-w-full text-3xl font-bold leading-[1.2] text-[#333333] sm:text-4xl md:text-5xl md:leading-[100%] lg:text-[61px]"
-            >
+          <div className="mx-auto mt-4 max-w-full px-4 sm:mt-6 sm:px-6 md:mt-8 md:px-8 lg:w-[80rem] lg:px-5">
+            <h1 className="max-w-full text-3xl font-bold leading-[1.2] text-[#333333] sm:text-4xl md:text-5xl md:leading-[100%] lg:text-[61px]">
               Unlock your{" "}
               <span className="bg-gradient-to-r from-[#2D3BF2] to-[#B832E9] bg-clip-text text-transparent">
                 Data Engineering{" "}
               </span>
               potential today
-            </motion.h1>
+            </h1>
 
-            <motion.div
-              variants={item}
-              className="my-4 flex flex-col flex-wrap gap-3 sm:flex-row md:my-8 md:gap-8"
-            >
+            <div className="my-4 flex flex-col flex-wrap gap-3 sm:flex-row md:my-8 md:gap-8">
               <p
                 className={`flex items-center gap-1.5 text-sm font-light text-[#3D3D3D] md:text-base ${inter.className}`}
               >
@@ -127,12 +116,9 @@ export default function Home() {
                 <FaCheckCircle className="size-4 text-[#1DBA0C] md:size-5" />
                 Learn latest trends from our courses
               </p>
-            </motion.div>
+            </div>
 
-            <motion.div
-              variants={item}
-              className="flex flex-col gap-3 sm:flex-row sm:gap-4"
-            >
+            <div className="flex flex-col gap-3 sm:flex-row sm:gap-4">
               <button
                 className={`rounded-[12px] bg-gradient-to-r from-[#4044ED] to-[#B832E9] px-6 py-2.5 font-semibold text-white transition-transform hover:scale-105 sm:px-8 sm:py-3 ${inter.className}`}
               >
@@ -143,27 +129,42 @@ export default function Home() {
               >
                 Solve Questions
               </button>
-            </motion.div>
+            </div>
 
-            <motion.div
-              variants={cardContainer}
-              initial="hidden"
-              animate="show"
-              className="mt-6 flex w-full flex-col gap-6 md:mt-10 md:flex-row md:gap-8 lg:gap-16"
-            >
-              <motion.div
-                variants={cardItem}
-                className="h-auto w-full rounded-[20px] border border-[#D7D7D7] bg-[#FAFAFA] p-4 sm:h-[275px] sm:p-6 md:w-1/2 md:rounded-[28px] md:p-8 lg:h-[320px] lg:w-[528px]"
-              >
+            <div className="mt-6 flex w-full flex-col gap-6 md:mt-10 md:flex-row md:gap-8 lg:gap-16">
+              <div className="h-auto w-full rounded-[20px] border border-[#D7D7D7] bg-[#FAFAFA] p-4 sm:h-[275px] sm:p-6 md:w-1/2 md:rounded-[28px] md:p-8 lg:h-[320px] lg:w-[528px]">
                 <div className="h-auto w-full md:h-[70%]">
                   <div className="flex flex-wrap items-center gap-2 justify-between">
-                    <img src="/drshil.png  " alt="" className="h-[40%] w-[28%]"/>
-                    <img src="/drshil.png  " alt="" className="h-[40%] w-[28%]"/>
-                    <img src="/drshil.png  " alt="" className="h-[40%] w-[28%]"/>
-                    <img src="/drshil.png  " alt="" className="h-[40%] w-[28%]"/>
-                    <img src="/drshil.png  " alt="" className="h-[40%] w-[28%]"/>
-                    <img src="/drshil.png  " alt="" className="h-[40%] w-[28%]"/>
-                     
+                    <img
+                      src="/drshil.png  "
+                      alt=""
+                      className="h-[40%] w-[28%]"
+                    />
+                    <img
+                      src="/drshil.png  "
+                      alt=""
+                      className="h-[40%] w-[28%]"
+                    />
+                    <img
+                      src="/drshil.png  "
+                      alt=""
+                      className="h-[40%] w-[28%]"
+                    />
+                    <img
+                      src="/drshil.png  "
+                      alt=""
+                      className="h-[40%] w-[28%]"
+                    />
+                    <img
+                      src="/drshil.png  "
+                      alt=""
+                      className="h-[40%] w-[28%]"
+                    />
+                    <img
+                      src="/drshil.png  "
+                      alt=""
+                      className="h-[40%] w-[28%]"
+                    />
                   </div>
                 </div>
                 <div className="mt-4 flex h-[30%] w-full flex-col justify-end">
@@ -180,22 +181,14 @@ export default function Home() {
                     Engineering
                   </p>
                 </div>
-              </motion.div>
+              </div>
 
-              <motion.div
-                variants={cardItem}
-                className="h-auto w-full rounded-[20px] border border-[#D7D7D7] bg-[#FAFAFA] p-4 sm:h-[275px] sm:p-6 md:w-1/2 md:rounded-[28px] md:p-8 lg:h-[320px] lg:w-[528px]"
-              >
+              <div className="h-auto w-full rounded-[20px] border border-[#D7D7D7] bg-[#FAFAFA] p-4 sm:h-[275px] sm:p-6 md:w-1/2 md:rounded-[28px] md:p-8 lg:h-[320px] lg:w-[528px]">
                 <div className="flex h-[70%] w-full items-center justify-center">
-                  <motion.div
-                    initial={{ scale: 0.9, opacity: 0 }}
-                    animate={{ scale: 1, opacity: 1 }}
-                    transition={{ delay: 0.9 }}
-                    className="w-full h-[100%] max-w-[470px] overflow-hidden rounded-lg shadow-lg"
-                  >
+                  <div className="w-full h-[100%] max-w-[470px] overflow-hidden rounded-lg shadow-lg">
                     {" "}
                     <img src="/screenshot.png" alt="image" />
-                  </motion.div>
+                  </div>
                 </div>
                 <div className="mt-4 flex h-[30%]  w-full flex-col justify-end">
                   <h3
@@ -211,9 +204,9 @@ export default function Home() {
                     Engineering
                   </p>
                 </div>
-              </motion.div>
-            </motion.div>
-          </motion.div>
+              </div>
+            </div>
+          </div>
         )}
       </div>
     </main>
