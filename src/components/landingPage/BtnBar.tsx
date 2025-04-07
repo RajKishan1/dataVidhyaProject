@@ -11,12 +11,12 @@ const BtnBar = ({ btnNum, setBtnNum }: prop) => {
         btnNum={btnNum}
         setBtnNum={setBtnNum}
         text={"Choose Your Path"}
-        Index={4}
+        Index={1}
         clName="w-[25%]"
       />
       <TabButtons
         text={"Solve Questions"}
-        Index={3}
+        Index={2}
         btnNum={btnNum}
         setBtnNum={setBtnNum}
         clName="-ml-[4%] w-[30%]"
@@ -26,7 +26,7 @@ const BtnBar = ({ btnNum, setBtnNum }: prop) => {
         btnNum={btnNum}
         setBtnNum={setBtnNum}
         text={"AI Review ✨"}
-        Index={2}
+        Index={3}
         clName="-ml-[4%] w-[30%]"
         clip={"polygon(0 0, 92% 0, 100% 50%, 92% 100%, 0 100%, 8% 50%)"}
       />
@@ -34,7 +34,7 @@ const BtnBar = ({ btnNum, setBtnNum }: prop) => {
         btnNum={btnNum}
         setBtnNum={setBtnNum}
         text={"Gamified Learning"}
-        Index={1}
+        Index={4}
         clName="-ml-[4%] w-[28%]"
       />
     </div>

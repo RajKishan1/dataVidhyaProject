@@ -1,0 +1,90 @@
+import React from "react";
+import TestimonyCard from "./TestimonyCard";
+import { Roboto } from "next/font/google";
+const roboto = Roboto({
+  variable: "--font-roboto",
+  subsets: ["latin"],
+});
+
+const Testimony = () => {
+  return (
+    <div
+      className={`${roboto.variable} w-full flex flex-col items-center justify-center `}
+    >
+      <h1 className="text-5xl text-black font-bold leading-[120%] mt-28">
+        Customer Testimonials
+      </h1>
+      <p className="text-lg font-normal leading-[150%] text-black mt-6 mb-20">
+        This platform transformed my data engineering skills!
+      </p>
+      <div className="w-[85%] flex justify-center gap-5 mb-28">
+        <span className="gap-5">
+          <TestimonyCard
+            text="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio ut
+          mollitia voluptate, nesciunt, modi laudantium voluptas fuga sed
+          perspiciatis placeat cupiditate ipsum praesentium odit! Inventore
+          incidunt cum."
+            Name="Name SurName"
+            position="AI Engineer"
+            companyName="Google"
+            pfp="/avatar.png"
+          />
+          <TestimonyCard
+            text="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio ut
+          mollitia voluptate, nesciunt, modi laudantium voluptas fuga sed
+          perspiciatis "
+            Name="Name Surname"
+            position="Data Engineer"
+            companyName=""
+            pfp="/avatar.png"
+          />
+        </span>
+        <span>
+          <TestimonyCard
+            text="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio ut
+          mollitia voluptate, nesciunt, modi laudantium voluptas fuga sed
+          perspiciatis  mollitia voluptate, nesciunt, modi laudantium voluptas fuga sed
+          perspiciatis placeat cupiditate ipsum praesentium odit! Inventore
+          incidunt cum."
+            Name="Name SurName"
+            position="AI Engineer"
+            companyName="Google"
+            pfp="/avatar.png"
+          />
+          <TestimonyCard
+            text="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio ut
+          mollitia voluptate, nesciunt, modi laudantium voluptas fuga sed
+          perspiciatis "
+            Name="Name Surname"
+            position="Data Engineer"
+            companyName=""
+            pfp="/avatar.png"
+          />
+        </span>
+        <span>
+          <TestimonyCard
+            text="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio ut
+          mollitia voluptate, nesciunt, modi laudantium voluptas fuga sed
+          perspiciatis placeat cupiditate ipsum praesentium odit! Inventore
+          incidunt cum."
+            Name="Name SurName"
+            position="AI Engineer"
+            companyName="Google"
+            pfp="/avatar.png"
+          />
+          <TestimonyCard
+            text="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio ut
+          mollitia voluptate,  mollitia voluptate, nesciunt, modi laudantium voluptas fuga sed perspiciatis nesciunt, modi laudantium voluptas fuga sed
+          perspiciatis "
+            Name="Name Surname"
+            position="Data Engineer"
+            companyName=""
+            pfp="/avatar.png"
+          />
+        </span>
+      </div>
+    </div>
+  );
+};
+
+export default Testimony;
