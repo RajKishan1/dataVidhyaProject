@@ -6,6 +6,7 @@ import { Inter } from "next/font/google";
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import Navbar from "../shared components/home page components/Navbar/navbar";
+import { courseCovered } from "@/context/faqData";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -57,11 +58,11 @@ export default function Home() {
   };
 
   return (
-    <main className="relative min-h-[110vh] w-full overflow-hidden">
+    <main className="relative h-[110vh] max-2xl:h-[125vh] w-full overflow-hidden">
       <div className="absolute left-0 top-0 flex h-full w-screen max-w-none overflow-hidden bg-white">
         <img
-          src="/gridBg.svg"
-          className="absolute bottom-0 h-[50%] w-screen min-w-full object-cover"
+          src="/grid.png"
+          className="absolute bottom-0 h-[40%] w-s28een min-w-full object-cover"
           alt="Grid background"
         />
       </div>
@@ -138,7 +139,7 @@ export default function Home() {
                 Explore Courses
               </button>
               <button
-                className={`rounded-[12px] bg-[#E4E6EB] px-6 py-2.5 font-semibold text-[#333333] transition-transform hover:scale-105 sm:px-8 sm:py-3 ${inter.className}`}
+                className={`rounded-[12px] bg-[#2E2E2E] px-6 py-2.5 font-semibold text-white transition-transform hover:scale-105 sm:px-8 sm:py-3 ${inter.className}`}
               >
                 Solve Questions
               </button>
@@ -155,17 +156,15 @@ export default function Home() {
                 className="h-auto w-full rounded-[20px] border border-[#D7D7D7] bg-[#FAFAFA] p-4 sm:h-[275px] sm:p-6 md:w-1/2 md:rounded-[28px] md:p-8 lg:h-[320px] lg:w-[528px]"
               >
                 <div className="h-auto w-full md:h-[70%]">
-                  {/* <div className="grid grid-cols-3 gap-2 md:gap-4">
-                    {courseCovered.map((item:number, index:number) => (
-                      <motion.div
-                        key={index}
-                        initial={{ scale: 0.8, opacity: 0 }}
-                        animate={{ scale: 1, opacity: 1 }}
-                        transition={{ delay: 0.7 + index * 0.1 }}
-                        className="flex flex-col items-center justify-center p-2"
-                      ></motion.div>
-                    ))}
-                  </div> */}
+                  <div className="flex flex-wrap items-center gap-2 justify-between">
+                    <img src="/drshil.png  " alt="" className="h-[40%] w-[28%]"/>
+                    <img src="/drshil.png  " alt="" className="h-[40%] w-[28%]"/>
+                    <img src="/drshil.png  " alt="" className="h-[40%] w-[28%]"/>
+                    <img src="/drshil.png  " alt="" className="h-[40%] w-[28%]"/>
+                    <img src="/drshil.png  " alt="" className="h-[40%] w-[28%]"/>
+                    <img src="/drshil.png  " alt="" className="h-[40%] w-[28%]"/>
+                     
+                  </div>
                 </div>
                 <div className="mt-4 flex h-[30%] w-full flex-col justify-end">
                   <h3
@@ -192,10 +191,13 @@ export default function Home() {
                     initial={{ scale: 0.9, opacity: 0 }}
                     animate={{ scale: 1, opacity: 1 }}
                     transition={{ delay: 0.9 }}
-                    className="w-full max-w-[320px] overflow-hidden rounded-lg shadow-lg"
-                  ></motion.div>
+                    className="w-full h-[100%] max-w-[470px] overflow-hidden rounded-lg shadow-lg"
+                  >
+                    {" "}
+                    <img src="/screenshot.png" alt="image" />
+                  </motion.div>
                 </div>
-                <div className="mt-4 flex h-[30%] w-full flex-col justify-end">
+                <div className="mt-4 flex h-[30%]  w-full flex-col justify-end">
                   <h3
                     className={`${inter.className}text-lg font-semibold text-[#333333] md:text-xl`}
                   >

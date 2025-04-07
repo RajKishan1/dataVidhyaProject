@@ -27,7 +27,7 @@ const Testimony = () => {
             Name="Name SurName"
             position="AI Engineer"
             companyName="Google"
-            pfp="/avatar.png"
+            pfp="https://images.unsplash.com/photo-1633332755192-727a05c4013d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dXNlcnxlbnwwfHwwfHx8MA%3D%3D"
           />
           <TestimonyCard
             text="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio ut
@@ -36,7 +36,7 @@ const Testimony = () => {
             Name="Name Surname"
             position="Data Engineer"
             companyName=""
-            pfp="/avatar.png"
+            pfp="https://images.unsplash.com/photo-1633332755192-727a05c4013d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dXNlcnxlbnwwfHwwfHx8MA%3D%3D"
           />
         </span>
         <span>
@@ -49,7 +49,7 @@ const Testimony = () => {
             Name="Name SurName"
             position="AI Engineer"
             companyName="Google"
-            pfp="/avatar.png"
+            pfp="https://images.unsplash.com/photo-1633332755192-727a05c4013d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dXNlcnxlbnwwfHwwfHx8MA%3D%3D"
           />
           <TestimonyCard
             text="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio ut
@@ -58,7 +58,7 @@ const Testimony = () => {
             Name="Name Surname"
             position="Data Engineer"
             companyName=""
-            pfp="/avatar.png"
+            pfp="https://images.unsplash.com/photo-1633332755192-727a05c4013d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dXNlcnxlbnwwfHwwfHx8MA%3D%3D"
           />
         </span>
         <span>
@@ -70,7 +70,7 @@ const Testimony = () => {
             Name="Name SurName"
             position="AI Engineer"
             companyName="Google"
-            pfp="/avatar.png"
+            pfp="https://images.unsplash.com/photo-1633332755192-727a05c4013d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dXNlcnxlbnwwfHwwfHx8MA%3D%3D"
           />
           <TestimonyCard
             text="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio ut
@@ -79,7 +79,7 @@ const Testimony = () => {
             Name="Name Surname"
             position="Data Engineer"
             companyName=""
-            pfp="/avatar.png"
+            pfp="https://images.unsplash.com/photo-1633332755192-727a05c4013d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dXNlcnxlbnwwfHwwfHx8MA%3D%3D"
           />
         </span>
       </div>

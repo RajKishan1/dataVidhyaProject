@@ -1,6 +1,7 @@
 import React from "react";
-// import "../../../.././app/css/accordion.css";
 import { Roboto } from "next/font/google";
+import { motion, AnimatePresence } from "framer-motion";
+
 interface AccordionProps {
   title: string;
   content: string;
@@ -27,11 +28,13 @@ const FaqsAccordion: React.FC<AccordionProps> = ({
 
   return (
     <div
-      className={` my-4 rounded-[16px]  border border-[#D7D7D7] bg-white max-md:my-2.5`}
+      className={`my-4 rounded-[16px] border border-[#D7D7D7] bg-white max-md:my-2.5`}
     >
       <div
-        className={`flex cursor-pointer items-center justify-between px-4 ${isOpen ? "dark:bg-gray-100" : ""}}
-        onClick={handleClick}`}
+        className={`flex cursor-pointer items-center justify-between px-4 ${
+          isOpen ? "dark:bg-gray-100" : ""
+        }`}
+        onClick={handleClick}
       >
         <h5
           className={`py-4 text-[18px] font-bold text-[#333333] max-md:py-2 max-md:text-[14px] ${roboto.className}`}
@@ -39,16 +42,30 @@ const FaqsAccordion: React.FC<AccordionProps> = ({
           {title}
         </h5>
         <div>
-          <div className={`text-[28px] text-[#7C7C7C] `}>
+          <motion.div 
+            className="text-[28px] text-[#7C7C7C]"
+            animate={{ rotate: isOpen ? 0 : 180 }}
+            transition={{ duration: 0.3, ease: "easeInOut" }}
+          >
             {isOpen ? "-" : "+"}
-          </div>
+          </motion.div>
         </div>
       </div>
-      {isOpen && (
-        <div className="w-full rounded-b-[20px] px-4 pb-3 text-[16px]  leading-8 text-[#7C7C7C] shadow-md dark:bg-gray-100">
-          {content}
-        </div>
-      )}
+      <AnimatePresence>
+        {isOpen && (
+          <motion.div 
+            initial={{ height: 0, opacity: 0 }}
+            animate={{ height: "auto", opacity: 1 }}
+            exit={{ height: 0, opacity: 0 }}
+            transition={{ duration: 0.3, ease: "easeInOut" }}
+            className="overflow-hidden"
+          >
+            <div className="w-full rounded-b-[20px] px-4 pb-3 text-[16px] leading-8 text-[#7C7C7C] shadow-md dark:bg-gray-100">
+              {content}
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </div>
   );
 };

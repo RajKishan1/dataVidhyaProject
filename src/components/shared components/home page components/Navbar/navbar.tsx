@@ -22,7 +22,7 @@ const Navbar = () => {
       <div className="flex justify-around">
         <Link href="/" className="flex items-center gap-2">
           <img
-            src="/logo3.png"
+            src="/logo.svg"
             alt="Data Vidhya"
             width={36}
             height={36}

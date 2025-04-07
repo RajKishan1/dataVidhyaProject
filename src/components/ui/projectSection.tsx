@@ -1,61 +1,14 @@
 import { Inter } from "next/font/google";
-import React, { useEffect, useState } from "react";
-// import ProjectFeedbackCard from "./shared/projectFeedbackCards";
-// import ProjectCard from "./shared/projectCards";
-// import { ProjectCardProps, ProjectFeedbackCardProps } from "@/types";
+import React, {  useState } from "react";
+import ProjectCard from "../shared/projectCards";
+import ProjectFeedbackCard from "./projectFeedbackCard";
+import { projectCards, projectFeedbackCards } from "@/context/projectData";
 
 const inter = Inter({ subsets: ["latin"] });
 
 const ProjectSection = () => {
   const [activeTab, setActiveTab] = useState("projects");
-//   const [projectReviews, setProjectReviews] = useState<
-//     ProjectFeedbackCardProps[]
-//   >([]);
-//   const [projects, setProjects] = useState<ProjectCardProps[]>([]);
-  const [isLoading, setIsLoading] = useState(false);
-  const [error, setError] = useState<string | null>(null);
-
-  useEffect(() => {
-    const fetchProjectFeedback = async () => {
-      if (activeTab === "reviews") {
-        setIsLoading(true);
-        setError(null);
-        try {
-          const response = await fetch("/api/v1/user/project-feedback");
-          if (!response.ok) {
-            throw new Error("Failed to fetch reviews");
-          }
-          const data = await response.json();
-        //   setProjectReviews(data.data);
-        } catch (err) {
-          setError(err instanceof Error ? err.message : "An error occurred");
-        //   setProjectReviews([]);
-        } finally {
-          setIsLoading(false);
-        }
-      }
-
-      if (activeTab === "projects") {
-        setIsLoading(true);
-        setError(null);
-        try {
-          const response = await fetch("/api/v1/user/projects");
-          if (!response.ok) {
-            throw new Error("Failed to fetch projects");
-          }
-          const data = await response.json();
-        //   setProjects(data.data);
-        } catch (err) {
-          setError(err instanceof Error ? err.message : "An error occurred");
-        //   setProjects([]);
-        } finally {
-          setIsLoading(false);
-        }
-      }
-    };
-
-    fetchProjectFeedback();
-  }, [activeTab]);
+ 
 
   return (
     <div className="w-full bg-[#FFFFFF]">
@@ -130,23 +83,18 @@ const ProjectSection = () => {
       </div>
 
       <div className="mx-auto my-10 max-w-7xl px-4">
-        {isLoading ? (
-          <div className="flex justify-center py-8">
-            <div className="size-8 animate-spin rounded-full border-4 border-gray-200 border-t-blue-600"></div>
-          </div>
-        ) : error ? (
-          <div className="text-center text-red-500">{error}</div>
-        ) : activeTab === "projects" ? (
+         {
+           activeTab === "projects" ? (
           <div className="grid gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-            {/* {projects.map((project) => ( */}
-              {/* <ProjectCard key={project.id} {...project} /> */}
-            {/* ))} */}
+            {projectCards.map((project) => (
+               <ProjectCard key={project.id} {...project} /> 
+             ))} 
           </div>
         ) : (
           <div className="grid gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-            {/* {projectReviews.map((review) => (
+            {projectFeedbackCards.map((review) => (
               <ProjectFeedbackCard key={review.id} {...review} />
-            ))} */}
+            ))}
           </div>
         )}
       </div>

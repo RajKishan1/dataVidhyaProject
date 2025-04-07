@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import FaqsAccordion from "./faqsAccordion";
-import { courseCovered } from "../../../../context/faqData";
+import { courseCovered, FAQsData } from "../../../../context/faqData";
 import { Roboto, Inter } from "next/font/google";
 
 const roboto = Roboto({
@@ -36,7 +36,7 @@ const FAQsSection = () => {
         <div className="mx-auto mt-[65px] w-[768px]">
           <div className="mx-auto flex w-full max-lg:flex-col">
             <div className="mt-2 size-full max-lg:w-full max-sm:mt-0">
-              {courseCovered.map((item:any, index:any) => (
+              {FAQsData.map((item:any, index:any) => (
                 <FaqsAccordion
                   key={index}
                   title={item.title}

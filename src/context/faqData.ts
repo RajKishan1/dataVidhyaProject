@@ -51,3 +51,31 @@ export const courseCovered = [
         "Master data warehousing with Snowflake! Learn core fundamentals, dimension modeling, and advanced concepts like SCD types and surrogate keys. Dive into Snowflake’s architecture, store and query data, and tackle end-to-end projects using Snowflake, Python, and the cloud.",
     },
   ];
+
+  export const FAQsData = [
+    {
+      title: "1. What is the duration of each course?",
+      content: "Each course typically lasts between 4 to 12 weeks, depending on the topic.",
+    },
+    {
+      title: "2. Are there any live sessions included?",
+      content: "Yes, most of our courses include weekly live Q&A and doubt-solving sessions.",
+    },
+    {
+      title: "3. Can I access the content after course completion?",
+      content: "Absolutely! You’ll have lifetime access to all course materials.",
+    },
+    {
+      title: "4. Is there a refund policy?",
+      content: "Yes, we offer a 7-day money-back guarantee with no questions asked.",
+    },
+    {
+      title: "5. Do you offer placement assistance?",
+      content: "Yes, we provide resume reviews, mock interviews, and connect you with hiring partners.",
+    },
+    {
+      title: "6. How can I stay updated?",
+      content: "Subscribe to our newsletter and follow us on LinkedIn for regular updates.",
+    },
+  ];
+  

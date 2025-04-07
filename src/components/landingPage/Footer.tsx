@@ -1,6 +1,7 @@
 import Link from "next/link";
-import { Facebook, Instagram, Linkedin, Youtube, Twitter } from "lucide-react";
 import { Inter, Poppins } from "next/font/google";
+import { FaFacebookF, FaInstagram, FaTwitter, FaLinkedinIn, FaYoutube } from "react-icons/fa";
+import Image from "next/image";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -14,22 +15,28 @@ export default function Footer() {
   return (
     <footer className="w-full border-t pb-20 pt-6">
       <div className="container px-4 md:px-6">
-        <div className="-ml-4  flex justify-start">
+        <div className="-ml-4 flex justify-start">
           <div className="flex items-center gap-2">
-            <div className=" ">
-              <img src="/blue-logo.png" alt="" className="size-[75px]" />
+            <div className="relative h-12 w-12">
+              <Image
+                src="/logo.svg"
+                alt="Data Vidhya Logo"
+                fill
+                className="object-contain"
+                priority
+              />
             </div>
             <span
-              className={`-ml-5 text-xl font-semibold text-[#333333] ${poppins.className}`}
+              className={`text-xl font-semibold text-[#333333] ${poppins.className}`}
             >
               Data Vidhya
             </span>
           </div>
         </div>
 
-        <div className="flex flex-col items-center justify-between sm:flex-row">
+        <div className="flex flex-col items-center justify-between gap-4 pt-4 sm:flex-row">
           <div
-            className={`flex items-center gap-6 gap-y-2 text-sm sm:mb-0 ${inter.className}`}
+            className={`flex flex-wrap items-center gap-6 gap-y-2 text-sm sm:mb-0 ${inter.className}`}
           >
             <span className="text-[14px] text-[#333333] underline">
               © 2025 Your Company. All rights reserved.
@@ -55,29 +62,37 @@ export default function Footer() {
             <Link
               href="https://facebook.com"
               aria-label="Facebook"
-              className=""
+              className="text-[#333333] hover:text-blue-600"
             >
-              <Facebook className="size-5" />
+              <FaFacebookF className="h-5 w-5" />
             </Link>
             <Link
               href="https://instagram.com"
               aria-label="Instagram"
-              className=""
+              className="text-[#333333] hover:text-pink-600"
             >
-              <Instagram className="size-5" />
+              <FaInstagram className="h-5 w-5" />
             </Link>
-            <Link href="https://twitter.com" aria-label="Twitter" className="">
-              <Twitter className="size-5" />
+            <Link 
+              href="https://twitter.com" 
+              aria-label="Twitter" 
+              className="text-[#333333] hover:text-blue-400"
+            >
+              <FaTwitter className="h-5 w-5" />
             </Link>
             <Link
               href="https://linkedin.com"
               aria-label="LinkedIn"
-              className=""
+              className="text-[#333333] hover:text-blue-700"
             >
-              <Linkedin className="size-5" />
+              <FaLinkedinIn className="h-5 w-5" />
             </Link>
-            <Link href="https://youtube.com" aria-label="YouTube" className="">
-              <Youtube className="size-5" />
+            <Link 
+              href="https://youtube.com" 
+              aria-label="YouTube" 
+              className="text-[#333333] hover:text-red-600"
+            >
+              <FaYoutube className="h-5 w-5" />
             </Link>
           </div>
         </div>
