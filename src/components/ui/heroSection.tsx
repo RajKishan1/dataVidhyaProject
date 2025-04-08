@@ -3,7 +3,6 @@
 import { FaCheckCircle } from "react-icons/fa";
 import { Inter } from "next/font/google";
 // import { courseCovered } from "@/context/GlobalData";
-import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import Navbar from "../shared components/home page components/Navbar/navbar";
 import { courseCovered } from "@/context/faqData";
@@ -17,7 +16,6 @@ export default function Home() {
     setIsMounted(true);
   }, []);
 
-  // Animation variants
   const container = {
     hidden: { opacity: 0 },
     show: {

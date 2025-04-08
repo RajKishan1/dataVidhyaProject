@@ -22,7 +22,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const CourseCard: React.FC<CourseCardProps> = ({ course }) => {
   return (
-    <div className="w-[394px] overflow-hidden rounded-[24px] border border-[#D7D7D7]  bg-white p-7">
+    <div className="w-sm overflow-hidden rounded-[24px] border border-[#D7D7D7]  bg-white p-7">
       <div className="relative">
         <img
           src={course.img || "/api/placeholder/400/250"}
