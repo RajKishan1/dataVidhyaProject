@@ -33,7 +33,7 @@ const FAQsSection = () => {
           Find answers to your most pressing questions about our data
           engineering courses and platform.
         </p>
-        <div className="mx-auto mt-[65px] w-[768px]">
+        <div className="mx-auto mt-[65px] w-[98%] md:w-1/2">
           <div className="mx-auto flex w-full max-lg:flex-col">
             <div className="mt-2 size-full max-lg:w-full max-sm:mt-0">
               {FAQsData.map((item:any, index:any) => (

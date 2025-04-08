@@ -55,7 +55,7 @@ const PlatformSection = () => {
           const isLast = index === platformCards.length - 1;
 
           const clipPath = isFirst
-            ? " polygon(90% 0, 100% 50%, 90% 100%, 0 100%, 0 0);"
+            ? " polygon(90% 0, 100% 50%, 90% 100%, 0 100%, 0 0)"
             : isLast
             ? "polygon(0 0, calc(100% - 10px) 0, 100% 10px, 100% 90%, calc(100% - 10px) 100%, 0 100%, 20px 50%)"
             : "polygon(0 0, calc(100% - 20px) 0, 100% 50%, calc(100% - 20px) 100%, 0 100%)";
