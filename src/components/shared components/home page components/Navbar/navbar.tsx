@@ -98,7 +98,7 @@ const Navbar = () => {
       </div>
 
       {isMenuOpen && (
-        <div className={`mt-4 space-y-3 py-2 md:hidden ${inter.className}`}>
+        <div className={`mt-4 bg-[#cdcdcdf5] rounded-xl space-y-3 py-2 md:hidden ${inter.className}`}>
           <Link
             href="/"
             className="block rounded-lg px-4 py-2 font-medium text-gray-800 hover:bg-gray-100"

@@ -14,10 +14,10 @@ const Testimony = () => {
       <h1 className="text-5xl text-black text-center  font-bold leading-[120%] mt-28">
         Customer Testimonials
       </h1>
-      <p className="text-lg font-normal leading-[150%] text-black mt-6 mb-20">
+      <p className="text-lg font-normal leading-[150%] text-center text-black mt-6 mb-6 md:mb-20">
         This platform transformed my data engineering skills!
       </p>
-      <div className="w-[85%] flex flex-col md:flex-row justify-center gap-0 md:gap-5 mb-28">
+      <div className="w-[85%] flex flex-col md:flex-row items-center justify-center gap-0 md:gap-5 mb-28">
         <span className="gap-5">
           <TestimonyCard
             text="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio ut

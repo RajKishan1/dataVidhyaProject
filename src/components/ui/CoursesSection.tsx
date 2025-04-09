@@ -122,7 +122,7 @@ const CoursesSection = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
+        <div className="grid grid-cols-1 gap-6 md:grid-cols-3 mx-auto">
           {courseCovered.map((course, index) => (
             <CourseCard key={index} course={course} />
           ))}

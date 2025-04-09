@@ -12,7 +12,7 @@ const ProjectCard = ({
   topic,
 }: ProjectCardProps) => {
   return (
-    <div className="w-[385px] rounded-[28px] border border-[#D7D7D7]  p-6 shadow-sm">
+    <div className="w-sm rounded-[28px] border border-[#D7D7D7]  p-6 shadow-sm">
       <div className="mb-3 overflow-hidden rounded-[13px] border border-[#D7D7D7]">
         <img
           src={projectImgUrl}

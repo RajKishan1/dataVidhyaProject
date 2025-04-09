@@ -48,7 +48,7 @@ const ProjectSection = () => {
           </span>
         </h2>
       </div>
-      <div className="mx-auto mt-[30px] flex w-[592px] justify-center">
+      <div className="mx-auto mt-[30px] flex w-full justify-center">
         <p
           className={`text-center text-[18px] text-[#000000] ${inter.className}`}
         >
