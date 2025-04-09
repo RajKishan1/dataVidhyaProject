@@ -1,7 +1,4 @@
 "use client";
-
-import { motion } from "framer-motion";
-import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import { Inter, Manrope } from "next/font/google";
@@ -14,7 +11,7 @@ const Navbar = () => {
 
   return (
     <nav className="sticky top-0 z-50 mx-auto my-4 h-[56px] max-w-[687px] rounded-[16px] border border-[#DBDBDB] bg-[#F0F0F07A]/50 px-4 shadow-sm backdrop-blur-sm md:px-8">
-      <div className="flex justify-around">
+      <div className="flex justify-between md:justify-around">
         <Link href="/" className="flex items-center gap-2">
           <img
             src="/logo.svg"
@@ -98,7 +95,9 @@ const Navbar = () => {
       </div>
 
       {isMenuOpen && (
-        <div className={`mt-4 bg-[#cdcdcdf5] rounded-xl space-y-3 py-2 md:hidden ${inter.className}`}>
+        <div
+          className={`mt-4 bg-gray-100 shadow-sm  border-[1px] border-neutral-400 backdrop-blur-xl rounded-xl space-y-3 py-2 md:hidden ${inter.className}`}
+        >
           <Link
             href="/"
             className="block rounded-lg px-4 py-2 font-medium text-gray-800 hover:bg-gray-100"

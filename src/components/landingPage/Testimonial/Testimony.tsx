@@ -11,7 +11,7 @@ const Testimony = () => {
     <div
       className={`${roboto.variable} w-full flex flex-col items-center justify-center `}
     >
-      <h1 className="text-5xl text-black text-center  font-bold leading-[120%] mt-28">
+      <h1 className="text-3xl md:text-5xl text-black text-center  font-bold leading-[120%] mt-28">
         Customer Testimonials
       </h1>
       <p className="text-lg font-normal leading-[150%] text-center text-black mt-6 mb-6 md:mb-20">

@@ -13,7 +13,7 @@ const ProjectSection = () => {
   return (
     <div className="w-full bg-[#FFFFFF]">
       <p
-        className={`text-center ${inter.className} mt-[112px] font-bold text-[#8B90A1]`}
+        className={`text-center ${inter.className} mt-4 md:mt-28 font-bold text-[#8B90A1]`}
       >
         PROJECTS
       </p>
@@ -85,13 +85,13 @@ const ProjectSection = () => {
       <div className="mx-auto my-10 max-w-7xl px-4">
          {
            activeTab === "projects" ? (
-          <div className="grid gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+          <div className="grid gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-items-center">
             {projectCards.map((project) => (
                <ProjectCard key={project.id} {...project} /> 
              ))} 
           </div>
         ) : (
-          <div className="grid gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+          <div className="grid gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-items-center">
             {projectFeedbackCards.map((review) => (
               <ProjectFeedbackCard key={review.id} {...review} />
             ))}

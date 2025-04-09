@@ -81,14 +81,14 @@ const CoursesSection = () => {
   return (
     <div className="bg-[#FAFAFA] py-12">
       <div className="mx-auto max-w-7xl px-4">
-        <div className="mb-12 text-center">
+        <div className="mb-2 md:mb-12 text-center">
           <p
             className={`mb-1 font-bold uppercase tracking-wider text-[#8B90A1] ${inter.className}`}
           >
             COURSES
           </p>
           <h2
-            className={`mb-2 text-[48px] font-bold leading-[120%] text-[#000000] ${inter.className}`}
+            className={`mb-2 text-3xl md:text-5xl font-bold leading-[120%] text-[#000000] ${inter.className}`}
           >
             Explore Our Data Engineering
             <br />
@@ -122,7 +122,7 @@ const CoursesSection = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 gap-6 md:grid-cols-3 mx-auto">
+        <div className="grid grid-cols-1 gap-6 md:grid-cols-3 justify-items-center mx-auto">
           {courseCovered.map((course, index) => (
             <CourseCard key={index} course={course} />
           ))}
