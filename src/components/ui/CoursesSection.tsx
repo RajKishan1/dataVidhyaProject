@@ -79,7 +79,7 @@ export const courseCovered = [
 
 const CoursesSection = () => {
   return (
-    <div className="bg-[#FAFAFA] py-12">
+    <div className="bg-[#FAFAFA] py-3 md:py-12">
       <div className="mx-auto max-w-7xl px-4">
         <div className="mb-2 md:mb-12 text-center">
           <p

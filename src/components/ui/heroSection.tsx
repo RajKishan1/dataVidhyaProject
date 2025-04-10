@@ -87,8 +87,8 @@ export default function Home() {
 
         {isMounted && (
           <div className="mx-auto mt-4 max-w-full px-4 sm:mt-6 sm:px-6 md:mt-8 md:px-8 lg:w-[80rem] lg:px-5">
-            <h1 className="max-w-full text-3xl font-bold leading-[1.2] text-[#333333] sm:text-4xl md:text-5xl md:leading-[100%] lg:text-[61px]">
-              Unlock your{" "}
+            <h1 className="max-w-full text-4xl font-bold leading-[1.2] text-[#333333] sm:text-4xl md:text-5xl md:leading-[100%] lg:text-[61px] my-6">
+              Unlock your{" "}<br/>
               <span className="bg-gradient-to-r from-[#2D3BF2] to-[#B832E9] bg-clip-text text-transparent">
                 Data Engineering{" "}
               </span>
