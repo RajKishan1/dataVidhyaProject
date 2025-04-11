@@ -32,28 +32,7 @@ export default function Home() {
     show: { y: 0, opacity: 1, transition: { duration: 0.5, ease: "easeOut" } },
   };
 
-  const cardContainer = {
-    // hidden: { opacity: 0 },
-    // show: {
-    //   opacity: 1,
-    //   transition: {
-    //     staggerChildren: 0.15,
-    //     delayChildren: 0.5,
-    //   },
-    // },
-  };
 
-  // const cardItem = {
-  //   hidden: { y: 30, opacity: 0 },
-  //   show: {
-  //     y: 0,
-  //     opacity: 1,
-  //     transition: {
-  //       duration: 0.6,
-  //       ease: "easeOut",
-  //     },
-  //   },
-  // };
 
   return (
 //     <main className="relative h-[152dvh] md:h-[100vh] w-full overflow-hidden">

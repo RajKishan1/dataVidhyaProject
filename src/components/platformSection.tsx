@@ -72,7 +72,7 @@ const PlatformSection = () => {
                 clipPath,
                 marginLeft: index !== 0 ? "-30px" : "0",
                 zIndex: platformCards.length - index,
-                border: "1px solid #ccc",
+                border: "1px solid #ccc ",
                 boxShadow:
                   activeIndex === index
                     ? "0 0 10px rgba(0,0,0,0.3)"

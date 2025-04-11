@@ -2,6 +2,7 @@ import React from "react";
 // import { CourseCard } from "./courseCard";
 import { Inter } from "next/font/google";
 import CourseCard from "./courseCard";
+import Link from "next/link";
 
 const inter = Inter({ subsets: ["latin"] });
 export const courseCovered = [
@@ -79,7 +80,7 @@ export const courseCovered = [
 
 const CoursesSection = () => {
   return (
-    <div className="bg-[#FAFAFA] py-3 md:py-12">
+    <div className="bg-[#FAFAFA] py-3 md:py-12 text-center">
       <div className="mx-auto max-w-7xl px-4">
         <div className="mb-2 md:mb-12 text-center">
           <p
