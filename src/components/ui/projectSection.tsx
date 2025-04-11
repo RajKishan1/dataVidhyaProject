@@ -25,7 +25,7 @@ const ProjectSection = () => {
           <span className="relative inline-block">
             Projects
             <svg
-              className="absolute -bottom-1 left-1/2 w-full max-w-[120px] -translate-x-1/2 sm:-bottom-6 md:-bottom-3 sm:max-w-[150px] md:max-w-[180px] lg:max-w-[200px]"
+              className="absolute -bottom-5 left-1/2 w-full max-w-[120px] -translate-x-1/2 sm:-bottom-6 md:-bottom-3 sm:max-w-[150px] md:max-w-[180px] lg:max-w-[200px]"
               height="35"
               viewBox="0 0 200 35"
               fill="none"

@@ -48,30 +48,29 @@ const PlatformSection = () => {
       id="platform"
       className="mt-16 px-4 max-w-7xl mx-auto text-center "
     >
-      
-      <div className=" flex justify-center overflow-x-auto px-4">
+      <div className="flex justify-center overflow-x-auto px-4 overflow-hidden">
         {platformCards.map((card, index) => {
           const isFirst = index === 0;
           const isLast = index === platformCards.length - 1;
 
           const clipPath = isFirst
-            ? " polygon(90% 0, 100% 50%, 90% 100%, 0 100%, 0 0)"
+            ? " polygon(90% 0, 100% 50%, 90% 100%, 0 100%, 0 0) "
             : isLast
-            ? "polygon(0 0, calc(100% - 10px) 0, 100% 10px, 100% 90%, calc(100% - 10px) 100%, 0 100%, 20px 50%)"
-            : "polygon(0 0, calc(100% - 20px) 0, 100% 50%, calc(100% - 20px) 100%, 0 100%)";
+            ? "polygon(0 0, 100% 0, 100% 10px, 100% 90%, 100% 100%, 0 100%, 0 50%)"
+            : "polygon(0 0, 90% 0, 100% 50%, 90% 100%, 0 100%)";
 
           return (
             <button
               key={index}
               onClick={() => handleArrowClick(index)}
-              className={`relative h-14 px-12 text-lg font-semibold transition-all duration-300 ${
+              className={`relative w-[30%] md:w-1/4 h-20 md:h-14 px-12 text-xs md:text-lg text-center flex items-center justify-center font-thin md:font-semibold transition-all duration-300 ${
                 activeIndex === index
                   ? "bg-gradient-to-r from-[#573efa] to-[#B832E9] text-white"
                   : "bg-white text-gray-800"
               }`}
               style={{
                 clipPath,
-                marginLeft: index !== 0 ? "-20px" : "0",
+                marginLeft: index !== 0 ? "-30px" : "0",
                 zIndex: platformCards.length - index,
                 border: "1px solid #ccc",
                 boxShadow:
@@ -86,9 +85,9 @@ const PlatformSection = () => {
         })}
       </div>
 
-      <div className="mt-20 flex flex-wrap md:flex-nowrap gap-8 justify-between items-start">
+      <div className="mt-20 flex flex-wrap md:flex-nowrap gap-8 justify-between items-center">
         <div className="w-full md:w-[45%] text-left ml-6 p-6">
-          <h3 className="text-2xl font-bold mb-4 text-black">
+          <h3 className="text-2xl font-bold mb-4 text-black ">
             {activeIndex === 2 ? (
               <>
                 <span className="bg-gradient-to-r from-blue-500 to-indigo-500 text-transparent bg-clip-text">
@@ -119,11 +118,9 @@ const PlatformSection = () => {
               {platformCards[activeIndex].description}
             </p>
           )}
-
-          
         </div>
 
-        <div className="w-full md:w-[90%] p-4 flex justify-center items-center gap-6 flex-wrap">
+        <div className="w-full md:w-[90%] p-4 flex justify-center items-center gap-6 flex-wrap border-[1px] shadow-lg border-neutral-300 rounded-lg">
           {Array.isArray(platformCards[activeIndex].imgSrc) ? (
             platformCards[activeIndex].imgSrc.map((src, i) => (
               <Image

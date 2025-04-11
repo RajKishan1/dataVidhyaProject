@@ -95,7 +95,7 @@ const CoursesSection = () => {
             <span className="relative inline-block">
               Courses
               <svg
-                className="absolute -bottom-3 left-1/2 -translate-x-1/2"
+                className="absolute -bottom-5 left-1/2 -translate-x-1/2"
                 width="200"
                 height="35"
                 viewBox="0 0 200 35"
