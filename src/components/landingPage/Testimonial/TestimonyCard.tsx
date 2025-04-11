@@ -12,7 +12,7 @@ const TestimonyCard = ({ text, pfp, Name, position, companyName }: prop) => {
     <div className="w-[20rem] md:w-[25rem] p-5 my-3 rounded-2xl border-[1px] border-[#D7D7D7] flex flex-col justify-between">
       <div className="w-full  text-black text-left">
         <p className="text-xl mb-8">⭐⭐⭐⭐⭐</p>
-        <p className="text-lg font-400 leading-[150%]">"{text}"</p>
+        <p className="text-[16px] md:text-xl font-400 leading-[150%]">"{text}"</p>
       </div>
       <div className="mt-5 flex justify-between">
         <Image

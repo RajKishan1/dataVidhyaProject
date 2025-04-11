@@ -72,7 +72,7 @@ export const CourseCard: React.FC<CourseCardProps> = ({ course }) => {
             </span>
           </div>
 
-          <div className="mb-6 flex items-center">
+          <div className="mb-6 flex flex-col md:flex-row items-center">
             <div className="mr-1 flex text-yellow-400">
               {[...Array(5)].map((_, i) => (
                 <span
@@ -95,7 +95,7 @@ export const CourseCard: React.FC<CourseCardProps> = ({ course }) => {
           </div>
         </div>
 
-        <div className="flex w-full justify-end">
+        <div className="flex w-full justify-center md:justify-end">
           <a
             href={course.courseLink}
             className={`block w-[124px] rounded-[12px] bg-gradient-to-r from-[#4044ED] to-[#B832E9] px-4 py-2 text-center text-sm font-semibold text-white ${inter.className}`}

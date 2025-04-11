@@ -9,7 +9,7 @@ import FAQsSection from "@/components/shared components/home page components/Faq
 
 import React from "react";
 
-const Revampe = () => {
+const page = () => {
   return (
     <div className="w-full bg-white ">
       <HeroSection />
@@ -23,4 +23,4 @@ const Revampe = () => {
   );
 };
 
-export default Revampe;
+export default page;
