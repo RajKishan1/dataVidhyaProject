@@ -56,7 +56,7 @@ export default function Home() {
   // };
 
   return (
-    <main className="relative h-[125vh] md:h-[100vh] w-full overflow-hidden">
+    <main className="relative h-[152vh] md:h-[100vh] w-full overflow-hidden">
       <div className="absolute left-0 top-0 flex h-full w-screen max-w-none overflow-hidden bg-white">
         <img
           src="/grid.png"
