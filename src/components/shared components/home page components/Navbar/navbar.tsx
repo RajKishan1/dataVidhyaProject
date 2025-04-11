@@ -10,7 +10,7 @@ const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <nav className="sticky top-0 z-50 mx-auto my-4 h-[56px] max-w-[687px] rounded-[16px] border border-[#DBDBDB] bg-[#F0F0F07A]/50 px-4 shadow-sm backdrop-blur-sm md:px-8">
+    <nav className="sticky top-0 z-50 mx-auto mt-4 h-[56px] max-w-[687px] rounded-[16px] border border-[#DBDBDB] bg-[#F0F0F07A]/50 px-4 shadow-sm backdrop-blur-sm md:px-8">
       <div className="flex justify-between md:justify-around">
         <Link href="/" className="flex items-center gap-2">
           <img
