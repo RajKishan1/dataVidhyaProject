@@ -56,7 +56,7 @@ export default function Home() {
   // };
 
   return (
-    <main className="relative h-[110vh] max-2xl:h-[125vh] w-full overflow-hidden">
+    <main className="relative h-[125vh] md:h-[100vh] w-full overflow-hidden">
       <div className="absolute left-0 top-0 flex h-full w-screen max-w-none overflow-hidden bg-white">
         <img
           src="/grid.png"
@@ -188,7 +188,7 @@ export default function Home() {
                     <img src="/screenshot.png" alt="image" />
                   </div>
                 </div>
-                <div className="mt-4 flex h-[30%]  w-full flex-col justify-end">
+                <div className="mt-4 flex h-[30%] mb-3 w-full flex-col justify-end">
                   <h3
                     className={`${inter.className}text-lg font-semibold text-[#333333] md:text-xl`}
                   >

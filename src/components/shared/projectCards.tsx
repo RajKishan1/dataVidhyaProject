@@ -26,7 +26,7 @@ const ProjectCard = ({
             {name}
           </h2>
           <span
-            className={`rounded-full bg-[#EFEFF2] px-3 py-1 text-sm text-[#161439] ${inter.className}`}
+            className={`rounded-full bg-[#EFEFF2] px-3 py-1 text-xs md:text-sm text-[#161439] ${inter.className}`}
           >
             {topic}
           </span>

@@ -47,9 +47,9 @@ export const CourseCard: React.FC<CourseCardProps> = ({ course }) => {
               ${course.originalPrice.toFixed(2)}
             </span>
             <span
-              className={`text-[14px] font-bold text-[#5751E1] ${inter.className}`}
+              className={`text-[16px] font-bold text-[#5751E1] ${inter.className}`}
             >
-              {`${course.price.toFixed(2)}`}
+              {`$ ${course.price.toFixed(2)}`}
             </span>
           </div>
         </div>
@@ -95,7 +95,7 @@ export const CourseCard: React.FC<CourseCardProps> = ({ course }) => {
           </div>
         </div>
 
-        <div className="flex w-full justify-center md:justify-end">
+        <div className="flex w-full justify-end">
           <a
             href={course.courseLink}
             className={`block w-[124px] rounded-[12px] bg-gradient-to-r from-[#4044ED] to-[#B832E9] px-4 py-2 text-center text-sm font-semibold text-white ${inter.className}`}

@@ -112,7 +112,7 @@ export const projectCards: ProjectCardProps[] = [
     description:
       "An admin dashboard for managing products, orders, and revenue. Includes authentication, dynamic charts, inventory management, and sales reports. Admins can update products, analyze sales trends, and monitor user activity in real-time. Built with React, Chart.js, and Tailwind CSS, it connects to a secure backend and integrates Stripe for transactions.",
     projectImgUrl: "/courseImg.svg",
-    topic: "Data Visualization",
+    topic: "Data Viz",
     courseName: "Full Stack Development",
   },
   {
