@@ -48,7 +48,7 @@ const PlatformSection = () => {
       id="platform"
       className="mt-16 px-4 max-w-7xl mx-auto text-center "
     >
-      <div className="flex justify-center overflow-x-auto px-4 overflow-hidden">
+      <div className="flex  justify-center overflow-x-auto px-4 overflow-hidden">
         {platformCards.map((card, index) => {
           const isFirst = index === 0;
           const isLast = index === platformCards.length - 1;
@@ -75,7 +75,7 @@ const PlatformSection = () => {
                 border: "1px solid #ccc ",
                 boxShadow:
                   activeIndex === index
-                    ? "0 0 10px rgba(0,0,0,0.3)"
+                    ? "0 0 10px rgba(0,0,0,0.5)"
                     : "0 0 5px rgba(0,0,0,0.1)",
               }}
             >
@@ -85,7 +85,7 @@ const PlatformSection = () => {
         })}
       </div>
 
-      <div className="mt-20 flex flex-wrap md:flex-nowrap gap-8 justify-between items-center">
+      <div className="mt-6 md:mt-20 flex flex-wrap md:flex-nowrap gap-8 justify-between items-center">
         <div className="w-full md:w-[45%] text-left ml-6 p-6">
           <h3 className="text-2xl font-bold mb-4 text-black ">
             {activeIndex === 2 ? (

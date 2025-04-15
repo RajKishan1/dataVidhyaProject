@@ -1,5 +1,5 @@
 import { Inter } from "next/font/google";
-import React, {  useState } from "react";
+import React, { useState } from "react";
 import ProjectCard from "../shared/projectCards";
 import ProjectFeedbackCard from "./projectFeedbackCard";
 import { projectCards, projectFeedbackCards } from "@/context/projectData";
@@ -8,7 +8,6 @@ const inter = Inter({ subsets: ["latin"] });
 
 const ProjectSection = () => {
   const [activeTab, setActiveTab] = useState("projects");
- 
 
   return (
     <div className="w-full bg-[#FFFFFF]">
@@ -83,17 +82,26 @@ const ProjectSection = () => {
       </div>
 
       <div className="mx-auto my-10 max-w-7xl px-4">
-         {
-           activeTab === "projects" ? (
+        {activeTab === "projects" ? (
           <div className="grid gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-items-center">
-            {projectCards.map((project) => (
-               <ProjectCard key={project.id} {...project} /> 
-             ))} 
+            {projectCards.map((project, index) => (
+              <div
+                key={project.id}
+                className={index >= 3 ? "hidden md:flex" : ""}
+              >
+                <ProjectCard {...project} />{" "}
+              </div>
+            ))}
           </div>
         ) : (
           <div className="grid gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-items-center">
-            {projectFeedbackCards.map((review) => (
-              <ProjectFeedbackCard key={review.id} {...review} />
+            {projectFeedbackCards.map((review, index) => (
+              <div
+                key={review.id}
+                className={index >= 3 ? "hidden md:flex" : ""}
+              >
+                <ProjectFeedbackCard {...review} />
+              </div>
             ))}
           </div>
         )}

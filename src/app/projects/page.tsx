@@ -1,5 +1,5 @@
 "use client"
-import Navbar from "@/components/shared components/home page components/Navbar/navbar";
+import Navbar from "@/components/shared components/home page components/Navbar/NavigationBar";
 import ProjectSection from "@/components/ui/projectSection";
 import React from "react";
 

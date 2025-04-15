@@ -5,8 +5,22 @@ import { Inter, Manrope } from "next/font/google";
 
 const inter = Inter({ subsets: ["latin"] });
 const manrope = Manrope({ subsets: ["latin"] });
+interface prop {
+  href: string;
+  text: string;
+}
+export const NavItems = ({ href, text }: prop) => {
+  return (
+    <Link
+      href={href}
+      className=" text-gray-800 transition-colors hover:text-purple-600"
+    >
+      {text}
+    </Link>
+  );
+};
 
-const Navbar = () => {
+const NavigationBar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
@@ -128,4 +142,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default NavigationBar;

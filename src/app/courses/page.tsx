@@ -1,4 +1,4 @@
-import Navbar from "@/components/shared components/home page components/Navbar/navbar";
+import Navbar from "@/components/shared components/home page components/Navbar/NavigationBar";
 import CoursesSection from "@/components/ui/CoursesSection";
 import React from "react";
 

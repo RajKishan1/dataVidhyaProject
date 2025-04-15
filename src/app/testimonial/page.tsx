@@ -1,5 +1,5 @@
 import TestimonyCard from "@/components/landingPage/Testimonial/TestimonyCard";
-import Navbar from "@/components/shared components/home page components/Navbar/navbar";
+import Navbar from "@/components/shared components/home page components/Navbar/NavigationBar";
 import React from "react";
 import { Roboto } from "next/font/google";
 const roboto = Roboto({
